@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nathalia's Fourth</title>
+<style>
+body {
+	background-image: url('moroccoinjuly.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;		
+<!------- cover the element, image may be cut off ------>
+	margin: 50px; 
+<!------- nest this property outside 100% 100% to work ----->
+}
+
+div {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin:10px;
+	padding: 30px;
+	border-radius: 5px;
+
+}
+
+div.class1 {
+	color: white;
+	background-image: url('space.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;  <!----- fit the entire image in the element ------>
+}
+
+div.class2 {
+	color: crimson;
+	text-shadow: 2px 0 0 #000000;
+	font-weight: bold;
+	background-image: urL('starvector.jpg');
+	background-repeat: repeat;
+	background-size: 10%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	background-color: white;
+	text-border: 1px solid black;
+	color: black;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+p {
+	background-color: blanchedalmond;
+	padding: 20px;
+	border-radius:  5px;
+}
+
+ul {
+	background-color: blanchedalmond;
+	color: black;
+	padding: 20px;
+	border-radius:  5px;
+}
+
+thead 	{}
+tbody 	{}
+tfoot	{color: red;}
+th 	{color:green;}
+caption {background-color: lightgray;}
+
+table, th, td {
+	background-color: white;
+	border-radius: 8px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+<!---- border cells formatting---->
+th, td {
+	padding: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+
+table#t01, table#t01 th, table#t01 td  {
+	background-color: lightblue;
+	border-radius: 0px;
+	border: 3px solid black;
+	border-collapse: separate;
+}
+
+table#t01 th {
+	color: white;
+	background-color: purple;
+	border-radius: 0px;
+	border-collapse: none;
+}
+
+
+
+table#t02 {
+	border-collapse: separate;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+table#t02 th, table#t02 td {
+	border-collapse: separate;
+	padding-left: 75px;
+	padding-right: 75px;
+
+}
+
+</style>
+</head>
+
+<!--------------------------------- BODY -------------------------------------->
+
+<body>
+
+<h2>Table of Contents</h1>
+<ul>
+	<li><a href="#PictureElement">Jump to Picture Element</a></li>
+	<li><a href="#Tables">Jump to Table Element</a></li>
+</ul>
+
+<div class="class2">
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+Hello everyone! 
+</div>
+
+<p>
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+</p>
+
+<div class="class1">
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+</div>
+
+<div class="class1">
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+</div>
+
+<div class="class1">
+Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+</div>
+
+
+<div>
+<h1 id="PictureElement">Picture HTML Element in Responsive Web Design</h1>
+<picture>
+	<source media="(min-width: 650px)" srcset="blackholemed.jpg">
+	<source media="(min-width: 465px)" srcset="blackhole225_150.jpg">
+	<img src="blackholeXL.jpg" style="width: 50%; height: 50%;">
+</picture>
+</div>
+
+<h1 id="Tables">HTML Tables</h1>
+<div>
+<!----------------------------- 3 BY 3 TABLE --------------->
+<table class="testt01">
+	<caption>Test Table, Calculations Caption</caption>
+<thead>
+	<tr>
+		<th>Date</th>
+		<th>Income</th>
+		<th>Expenses</th>
+		<th colspan="2">Total Net Worths</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td rowspan="2">January</td>
+		<td>100.00</td>
+		<td>50.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
+
+	</tr>
+
+	<tr>
+		<td>100.00</td>
+		<td>50.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
+
+	</tr>
+
+	<tr>
+		<td>February</td>
+		<td>250.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
+	</tr>
+</tbody>
+<tfoot>
+	<tr>
+		<td>Sums</td>
+		<td>250.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
+	</tr>
+</tfoot>
+</table>
+</div>
+
+<div>
+
+<table id="t01">
+	<caption>Styled Table</caption>
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Age</th>
+	</tr>
+
+	<tr>
+		<td>Jane</td>
+		<td>Smith</td>
+		<td>94</td>
+	</tr>
+
+	<tr>
+		<td>John</td>
+		<td>Smith</td>
+		<td>65</td>
+	</tr>
+</table>
+
+<br/>
+
+<table id="t02">
+	<caption>Styled Table</caption>
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Age</th>
+	</tr>
+
+	<tr>
+		<td>Jane</td>
+		<td>Smith</td>
+		<td>94</td>
+	</tr>
+
+	<tr>
+		<td>John</td>
+		<td>Smith</td>
+		<td>65</td>
+	</tr>
+</table>
+
+</div>
+
+</body>
+</html>

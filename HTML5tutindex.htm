@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<title>Nathalia's HTML Lessons</title>
+	<meta charset="UTF-8">
+<style>
+body {
+background-color:blanchedalmond;
+font-family: courier;
+text-align: center;
+margin: 30px;
+margin-bottom: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+background-color: white;
+font-family: arial;
+margin: 10px;
+}
+
+p {
+margin: 30px;
+}
+
+ul {
+display: inline-block;
+}
+
+ol {
+display: inline-block;
+}
+
+hr {
+margin: 50px;
+}
+</style>
+</head>
+
+<!----------------------------------------- LINKS TO BOOKMARKS --------------------------->
+<a href="#Formatting">Jump to Formatting</a> <br/>
+<a href="#Quotes">Jump to Quotes</a> <br/>
+<a href="#Bookmark">Jump to Bookmarks</a> <br/>
+<a href="#Images">Jump to Images</a> <br/>
+<a href="#ImageMaps">Jump to Image Maps</a> <br/>
+
+
+<body>
+<h1 style="font-family:arial;background-color:white;">Headings: h1 to h6</h1>
+<h2>H2 Heading</h2>
+<h3>H3 Heading</h3>
+<h4>H4 Heading</h4>
+<h5>H5 Heading</h5>
+<h6>H6 Heading</h6>
+
+<h1>Paragraphs</h1>
+<p>My first paragraph. Meta data is about the HTML document itself.</p>
+
+<p>  
+<a href="https://www.w3schools.com/html">Link here to tutorial.</a>
+ href is an attribute nested inside the a tag.<br/>
+Here's an image below:
+</p>
+<img src="link.png" alt="test" height="100" width="100">
+<br/>
+Here's a button:<br/>
+<button>Click me</button>
+<button><a href="https://www.w3schools.com/html">Click me</a></button>
+
+
+<h2>Unordered vs. Ordered Lists</h2>
+<ul>
+	<li>Dignity</li>
+	<li>Faith</li>
+</ul> <br/>
+
+<ol>
+	<li>Dignity</li>
+	<li>Faith</li>
+</ol>
+
+<p style="color:grey;" title="tooltip 'title'">Line breaks <br/>are empty elements. They're closed at the end instead.
+<br/>
+All HTML elements can have attributes. Attributes can have double and single quotes.
+What does the id attribute do?
+</p>
+
+<hr/>
+
+<p style="color:blue;">The pre tag preserves preformatted text.</p>
+<pre>
+	My Bonnie lies over the ocean.
+
+	My Bonnie lies over the sea.
+
+	...Oh, bring back my Bonny to me.
+</pre>
+
+<hr/>
+
+<h1 id="Formatting">Formatting</h1>
+
+<p>
+<b>Bold text uses the b tag.</b> <br/>
+Strong text is bold and is also <strong>semantically important.</strong> <br/>
+<i>Italic text uses the i tag. Emphasis uses the em tag.</i> <br/>
+Subscript uses the <sub>sub tag.</sub> <br/>
+Superscript uses the <sup>super tag.</sup> <br/>
+Deleted text is also <del>strikethrough.</del> <br/>
+<mark>This is highlighted text.</mark> <br/>
+<u>Does underline work?</u>
+</p>
+
+<hr/>
+
+<!------------------ This is HTML Quotations from w3schools.com ----------------------->
+
+<h1 id="Quotes">Quotes</h1>
+<p style="background-color: lavenderblush;">
+This is a blockquote:
+</p>
+<blockquote style="background-color:tomato;" cite="">This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This blockquote is indented on the first line.</blockquote>
+
+<p>This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph. This is a regular paragraph.
+</p>
+
+<p>
+The body tag's center alignment overrides the blockquote formatting. <br/><br/>
+<q>This is a short quote.</q> <br/><br/>
+<strong>You can define abbreviations</strong> like <abbr title="Lassonde Media Group">LMG</abbr> with the attribute title and tag abbr. <br/><br/>
+Cite is the title of a work, like <cite>The Scream</cite> <br/><br/>
+I don't know when we're going to use this, but it changes the current text direction: <br/>
+<bdo dir="rtl">I don't know when we're going to use this, but it changes the current text direction: </bdo><br/><br/>
+</p>
+
+What if I had no tag?
+
+<hr/>
+
+<!-- This is the HTML Comments section -->
+<p>You can use comments to debug your code.</p>
+
+<!-- You won't see this
+<bdo dir="rtl">I don't know when we're going to use this, but it changes the current text direction: </bdo><br/><br/>
+-->
+
+<hr/>
+
+<!-------------------------------- This is the HTML Colors section ---------------------->
+<h1 style="font-family:arial; background-color:Tomato;">Tomato</h1>
+<h1 style="font-family:arial; background-color:LightGray;">Light Gray</h1>
+<h1 style="font-family:arial; background-color:Violet;">Violet</h1>
+<h1 style="font-family:arial; background-color:lightblue;">Light Blue</h1>
+<h1 style="font-family:arial; background-color:lightgreen;">Light Green</h1>
+<h1 style="font-family:arial; background-color:Purple;">Purple</h1>
+<h1 style="font-family:arial; background-color:mediumseagreen;">Medium Sea Green</h1>
+
+<p style="color: dodgerblue;">
+Here's a list of <strong><a href="https://www.w3schools.com/colors/colors_names.asp">140 standard color names. </a></strong>
+</p>
+
+<h1 style="border:2px solid tomato;">Colored Borders</h1>
+<p>
+There are other ways of selecting colors such as RGB and HEX values.
+</p>
+
+<h1 style="background-color:rgba(255, 99, 71);">Tomato</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">Tomato but 50% transparent</h1>
+<h1 style="background-color:#FFFFFF;">White</h1>
+
+<br/><hr/><br/>
+
+<h1 id="Bookmark">Bookmark</h1>
+
+<!------------------ HTML Images ------------->
+
+<h1 id="Images">Images</h1>
+<img src="link.png" alt="Link icon" style="float:left;height:100px;width:100px;">
+<p>
+This is a paragraph of text to show the floating image property. This is a paragraph of text to show the floating image property. This is a paragraph of text to show the floating image property. This is a paragraph of text to show the floating image property. This is a paragraph of text to show the floating image property. This is a paragraph of text to show the floating image property. This is a paragraph of text to show the floating image property. This is a paragraph of text to show the floating image property.
+<br/><br/><br/>
+
+<img src="link.png" alt="Link icon" style="height:100px;width:100px;">
+This is the default image with text style. This is the default image with text style. This is the default image with text style. This is the default image with text style. This is the default image with text style. <b>It displays on the line above the text.</b> This is the default image with text style. This is the default image with text style. This is the default image with text style. This is the default image with text style. This is the default image with text style. <b>It displays on the line above the text.</b>
+<br/><br/><br/>
+
+<img src="link.png" alt="Link icon" style="float:right;height:100px;width:100px;">
+This is an image floating to the right. This is an image floating to the right. This is an image floating to the right. This is an image floating to the right. This is an image floating to the right. This is an image floating to the right. This is an image floating to the right. This is an image floating to the right. This is an image floating to the right. This is an image floating to the right. This is an image floating to the right. 
+</p>
+
+<br/><hr/><br/>
+
+
+<!-------------------------------- IMAGE MAPS ---------------------------------->
+<h1 id="ImageMaps">Image Maps</h1>
+<p>
+You would use the attribute usemap=<q>#workmap</q> inside the img tag. <br/>
+Then you add a < map > element. The code is: <br/>
+<pre>
+< map name=<q>workmap</q> >
+</pre> <br/>
+
+<img src="desk.jpg" alt="Desk with coffee and book" usemap="#deskmap" 	style="width:500px;height:400px;">
+
+<map name="deskmap">	
+	<area shape="rect" coords="125, 125, 400, 370" alt="Computer" 
+	href="https://nathaliavene.wordpress.com/" target="_blank">
+
+	<area shape="circle" coords="450, 250, 35" alt="Coffee" 	href="https://nathaliavene.wordpress.com/" target="_blank" <!--onclick="myFunction()-->">
+</map>
+
+<!----------
+<script>
+function myFunction() {
+	alert("You've clicked the coffee cup! I'll bring you to my portfolio now.");
+}
+</script>
+------>
+
+<!-------------------------------- IMAGE MAPS END ---------------------------------->
+
+<br/><hr/><br/>
+
+
+
+
+</body>
+</html>
