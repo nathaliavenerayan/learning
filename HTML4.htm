@@ -3,145 +3,112 @@
 <head>
 	<title>Nathalia's Fourth</title>
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+	background-image: url('moroccoinjuly.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;		
+<!------- cover the element, image may be cut off ------>
+	margin: 50px; 
+<!------- nest this property outside 100% 100% to work ----->
+}
 
-	body {
-		font-family: "Raleway", sans-serif;
-		background-image: url('moroccoinjuly.jpg');
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: cover;		/* Covers the element, image may be cut off */
-		margin: 50px;  /* nest this property outside 100% 100% to work */
-	}
+div {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin:10px;
+	padding: 30px;
+	border-radius: 5px;
 
-	div {
-		background-color: rgba(255, 255, 255, 0.5);
-		margin:10px;
-		padding: 30px;
-		border-radius: 5px;
+}
 
-	}
+div.class1 {
+	color: white;
+	background-image: url('space.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;  <!----- fit the entire image in the element ------>
+}
 
-	div.class1 {
-		color: white;
-		background-image: url('space.jpg');
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: 100% 100%;  <!----- fit the entire image in the element ------>
-	}
+div.class2 {
+	color: crimson;
+	text-shadow: 2px 0 0 #000000;
+	font-weight: bold;
+	background-image: urL('starvector.jpg');
+	background-repeat: repeat;
+	background-size: 10%;
+}
 
-	div.class2 {
-		color: crimson;
-		text-shadow: 2px 0 0 #000000;
-		font-weight: bold;
-		background-image: urL('starvector.jpg');
-		background-repeat: repeat;
-		background-size: 10%;
-	}
+h1, h2, h3, h4, h5, h6 {
+	background-color: white;
+	text-border: 1px solid black;
+	color: black;
+	padding: 5px;
+	border-radius: 5px;
+}
 
-	h1, h2, h3, h4, h5, h6 {
-		background-color: white;
-		text-border: 1px solid black;
-		color: black;
-		padding: 5px;
-		border-radius: 5px;
-	}
+p {
+	background-color: blanchedalmond;
+	padding: 20px;
+	border-radius:  5px;
+}
 
-	p {
-		background-color: blanchedalmond;
-		padding: 20px;
-		border-radius:  5px;
-		text-align: right;
-	}
+ul {
+	background-color: blanchedalmond;
+	color: black;
+	padding: 20px;
+	border-radius:  5px;
+}
 
-	ul {
-		background-color: blanchedalmond;
-		color: black;
-		text-align: justify;
-		padding: 20px;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		border-radius:  5px;
-		display: inline-block;
-		margin: 0 auto;
-		/*******CENTER TABLE OF CONTENTS********/
-		/*list-style-type: circle;*/
-	}
+thead 	{}
+tbody 	{}
+tfoot	{color: red;}
+th 	{color:green;}
+caption {background-color: lightgray;}
 
-	thead 	{}
-	tbody 	{}
-	tfoot	{color: red;}
-	th 	{color:green;}
-	caption {background-color: lightgray;}
+table, th, td {
+	background-color: white;
+	border-radius: 8px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
 
-	table, th, td {
-		background-color: white;
-		border-radius: 8px;
-		border: 1px solid black;
-		border-collapse: collapse;
-	}
-
-	<!---- border cells formatting---->
-	th, td {
-		padding: 10px;
-		padding-right: 30px;
-		padding-left: 30px;
-	}
+<!---- border cells formatting---->
+th, td {
+	padding: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
 
 
-	table#t01, table#t01 th, table#t01 td  {
-		background-color: lightblue;
-		border-radius: 0px;
-		border: 3px solid black;
-		border-collapse: separate;
-	}
+table#t01, table#t01 th, table#t01 td  {
+	background-color: lightblue;
+	border-radius: 0px;
+	border: 3px solid black;
+	border-collapse: separate;
+}
 
-	table#t01 th {
-		color: white;
-		background-color: purple;
-		border-radius: 0px;
-		border-collapse: none;
-	}
+table#t01 th {
+	color: white;
+	background-color: purple;
+	border-radius: 0px;
+	border-collapse: none;
+}
 
 
 
-	table#t02 {
-		border-collapse: separate;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
+table#t02 {
+	border-collapse: separate;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
-	table#t02 th, table#t02 td {
-		border-collapse: separate;
-		padding-left: 75px;
-		padding-right: 75px;
-	}
+table#t02 th, table#t02 td {
+	border-collapse: separate;
+	padding-left: 75px;
+	padding-right: 75px;
 
-	/******* UL C1 *******/
-	ul#c1 {
-		list-style-type: none;
-		display: block;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background-color: cornflowerblue;
-	}
+}
 
-	ul#c1 li {
-		float: left; /*or display: inline*/
-	}
-
-	ul#c1 li a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 16px;
-		text-decoration: none;
-	}
-
-	ul#c1 li a:hover {
-		background-color: darkblue;
-	}
 </style>
 </head>
 
@@ -149,14 +116,14 @@
 
 <body>
 
-	<h2>Navigation</h1>
-	<ul id="c1">
-		<li><a href="#PictureElement">Jump to Picture Element</a></li>
-		<li><a href="#Tables">Jump to Table Element</a></li>
-		<li><a href="#Lists">Jump to List Element</a></li>
-	</ul>
+<h2>Table of Contents</h1>
+<ul>
+	<li><a href="#PictureElement">Jump to Picture Element</a></li>
+	<li><a href="#Tables">Jump to Table Element</a></li>
+</ul>
 
-	<div class="class2">
+<div class="class2">
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone!
 	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
 	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
 	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
@@ -164,159 +131,165 @@
 	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
 	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
 	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! 
+</div>
+
+<p>
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone!
 	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
 	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
 	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
 	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-	Hello everyone! 
-	</div>
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! 
+</p>
 
-	<p>
-	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-	</p>
+<div class="class1">
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone!
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! 
+</div>
 
-	<div class="class1">
-	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-	</div>
+<div class="class1">
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone!
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! 
+</div>
 
-	<div class="class1">
-	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-	</div>
+<div class="class1">
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone!
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+	Hello everyone! Hello everyone! Hello everyone! 
+</div>
 
-	<div>
-	<h1 id="PictureElement">Picture HTML Element in Responsive Web Design</h1>
-	<picture>
-		<source media="(min-width: 650px)" srcset="blackholemed.jpg">
-		<source media="(min-width: 465px)" srcset="blackhole225_150.jpg">
-		<img src="blackholeXL.jpg" style="width: 50%; height: 50%;">
-	</picture>
-	</div>
 
-	<h1 id="Tables">HTML Tables</h1>
-	<div>
-	<!----------------------------- 3 BY 3 TABLE --------------->
-	<table class="testt01">
-		<caption>Test Table, Calculations Caption</caption>
-	<thead>
-		<tr>
-			<th>Date</th>
-			<th>Income</th>
-			<th>Expenses</th>
-			<th colspan="2">Total Net Worths</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td rowspan="2">January</td>
-			<td>100.00</td>
-			<td>50.00</td>
-			<td>100.00</td>
-			<td>100.00</td>
+<div>
+<h1 id="PictureElement">Picture HTML Element in Responsive Web Design</h1>
+<picture>
+	<source media="(min-width: 650px)" srcset="blackholemed.jpg">
+	<source media="(min-width: 465px)" srcset="blackhole225_150.jpg">
+	<img src="blackholeXL.jpg" style="width: 50%; height: 50%;">
+</picture>
+</div>
 
-		</tr>
+<h1 id="Tables">HTML Tables</h1>
+<div>
+<!----------------------------- 3 BY 3 TABLE --------------->
+<table class="testt01">
+	<caption>Test Table, Calculations Caption</caption>
+<thead>
+	<tr>
+		<th>Date</th>
+		<th>Income</th>
+		<th>Expenses</th>
+		<th colspan="2">Total Net Worths</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td rowspan="2">January</td>
+		<td>100.00</td>
+		<td>50.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
 
-		<tr>
-			<td>100.00</td>
-			<td>50.00</td>
-			<td>100.00</td>
-			<td>100.00</td>
+	</tr>
 
-		</tr>
+	<tr>
+		<td>100.00</td>
+		<td>50.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
 
-		<tr>
-			<td>February</td>
-			<td>250.00</td>
-			<td>100.00</td>
-			<td>100.00</td>
-			<td>100.00</td>
-		</tr>
-	</tbody>
-	<tfoot>
-		<tr>
-			<td>Sums</td>
-			<td>250.00</td>
-			<td>100.00</td>
-			<td>100.00</td>
-			<td>100.00</td>
-		</tr>
-	</tfoot>
-	</table>
-	</div>
+	</tr>
 
-	<div>
+	<tr>
+		<td>February</td>
+		<td>250.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
+	</tr>
+</tbody>
+<tfoot>
+	<tr>
+		<td>Sums</td>
+		<td>250.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
+		<td>100.00</td>
+	</tr>
+</tfoot>
+</table>
+</div>
 
-	<table id="t01">
-		<caption>Styled Table</caption>
-		<tr>
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th>Age</th>
-		</tr>
+<div>
 
-		<tr>
-			<td>Jane</td>
-			<td>Smith</td>
-			<td>94</td>
-		</tr>
+<table id="t01">
+	<caption>Styled Table</caption>
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Age</th>
+	</tr>
 
-		<tr>
-			<td>John</td>
-			<td>Smith</td>
-			<td>65</td>
-		</tr>
-	</table>
+	<tr>
+		<td>Jane</td>
+		<td>Smith</td>
+		<td>94</td>
+	</tr>
 
-	<br/>
+	<tr>
+		<td>John</td>
+		<td>Smith</td>
+		<td>65</td>
+	</tr>
+</table>
 
-	<table id="t02">
-		<caption>Styled Table</caption>
-		<tr>
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th>Age</th>
-		</tr>
+<br/>
 
-		<tr>
-			<td>Jane</td>
-			<td>Smith</td>
-			<td>94</td>
-		</tr>
+<table id="t02">
+	<caption>Styled Table</caption>
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Age</th>
+	</tr>
 
-		<tr>
-			<td>John</td>
-			<td>Smith</td>
-			<td>65</td>
-		</tr>
-	</table>
+	<tr>
+		<td>Jane</td>
+		<td>Smith</td>
+		<td>94</td>
+	</tr>
 
-	</div>
+	<tr>
+		<td>John</td>
+		<td>Smith</td>
+		<td>65</td>
+	</tr>
+</table>
 
-	<div>
-	<h1 id="Lists">HTML Lists</h1>
+</div>
 
-	<dl>
-		<dt>Mother</dt>
-		<dd>- Female</dd>
-
-		<dt>Father</dt>
-		<dd>- Male</dd>
-
-		<dt>Sibling</dt>
-		<dd>- Female/Male</dd>
-	</dl>
-
-	<h2>Unordered Nested List</h2>
-	<ul>
-		<li>Hi</li>
-			<ul>
-				<li>Hello</li>
-				<li>Salut</li>
-			</ul>
-		<li>This</li>
-		<li>Is</li>
-		<li>a List</li>
-		<li>Goodbye</li>
-	</ul>
-	</div>
 </body>
 </html>
