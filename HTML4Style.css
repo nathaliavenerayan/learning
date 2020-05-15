@@ -27,7 +27,7 @@
 		background-size: 100% 100%;  <!----- fit the entire image in the element ------>
 	}
 
-	div.class2 {
+	.class2 {
 		color: crimson;
 		text-shadow: 2px 0 0 #000000;
 		font-weight: bold;
@@ -45,14 +45,14 @@
 	}
 
 	p {
-		background-color: blanchedalmond;
+		background-color: lightblue;
 		padding: 20px;
 		border-radius:  5px;
 		text-align: left;
 	}
 
 	ul {
-		background-color: blanchedalmond;
+		background-color: tomato;
 		color: black;
 		text-align: justify;
 		padding: 20px;
@@ -138,4 +138,8 @@
 
 	ul#c1 li a:hover {
 		background-color: darkblue;
+	}
+
+	#s01 {
+		color: red;
 	}
