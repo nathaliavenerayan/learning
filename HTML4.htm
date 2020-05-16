@@ -9,11 +9,12 @@
 
 <body>
 
-	<h2>Navigation</h1>
+	<h2 id="Navigation">Navigation</h1>
 	<ul id="c1">
 		<li><a href="#PictureElement">Jump to Picture Element</a></li>
 		<li><a href="#Tables">Jump to Table Element</a></li>
 		<li><a href="#Lists">Jump to List Element</a></li>
+		<li><a href="#Classes">Jump to Classes Element</a></li>
 	</ul>
 
 	<div class="class2">
@@ -222,10 +223,39 @@
 		</table>
 
 	</div>
-
+	
+	<h1 id="Classes">Classes</h1>
+	<div>
 	<div class="test1 test2">
-		Hello
+		Hello World!
 	</div>
+
+		<p class="test1 test2">Hello Again</p>
+
+		<!----------------- Use class attribute in JS ------------------->
+		<button id="b01" onclick="myFunction()">Kiss those elements goodbye</button>
+
+		<script type="text/javascript">
+			function myFunction() {
+				var x = document.getElementsByClassName("test1");
+				for (var i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+			}
+		</script>
+	</div>
+
+	<footer>
+		<h2>Contact</h2>
+		<div>
+			<a href="#"><img src="linkedin.png" alt="LinkedIn Icon" class="icon"></a> 
+			<br/><br/>
+			Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+		</div>
+		<ul id="c1">
+			<li><a href="#Navigation">Jump to top</a></li>
+		</ul>
+	</footer>
 
 </body>
 </html>

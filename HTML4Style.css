@@ -153,3 +153,27 @@
 		background-color: black;
 		color: white;
 	}
+
+	#b01 {
+		background-color: black;
+		color: white;
+		padding: 20px;
+		border: none;
+		border-radius: 8px;
+	}
+
+	button#b01:hover {
+		background-color: white;
+	}
+
+footer {
+	background-color: lightgray;
+	opacity: 0.9;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.icon {
+	height: 50px;
+	width: 50px;
+}
