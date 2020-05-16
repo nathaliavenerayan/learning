@@ -4,6 +4,12 @@
 	<title>Nathalia's Fourth</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="HTML4Style.css">
+	<meta name="Description" content="Nathalia's HTML Practice with W3Schools">
+	<meta name="Keywords" content="HTML, CSS, JavaScript">
+	<meta name="authors" content="Nathalia Venerayan">
+	<!-------- lets browser control page's scaling, responsive design ---->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <base target="_blank"> -->
 </head>
 
 <!--------------------------------- BODY -------------------------------------->
@@ -18,6 +24,8 @@
 			<li><a href="#Classes">Jump to Classes Element</a></li>
 			<li><a href="#Ids">Jump to Id Element</a>
 			<li><a href="#Iframes">Jump to Iframe Element</a></li>
+			<li><a href="#JavaScript">Jump to JavaScript</a></li>
+			<li><a href="#Head">Jump to Head Element</a></li>
 		</ul>
 	</div>
 
@@ -53,9 +61,9 @@
 	<div>
 	<h1 id="PictureElement">Picture HTML Element in Responsive Web Design</h1>
 	<picture>
-		<source media="(min-width: 650px)" srcset="blackholemed.jpg">
-		<source media="(min-width: 465px)" srcset="blackhole225_150.jpg">
-		<img src="blackholeXL.jpg" style="width: 50%; height: 50%;">
+		<source media="(min-width: 650px)" srcset="Images/blackholemed.jpg">
+		<source media="(min-width: 465px)" srcset="Images/blackhole225_150.jpg">
+		<img src="Images/blackholeXL.jpg" style="width: 50%; height: 50%;">
 	</picture>
 	</div>
 
@@ -269,7 +277,7 @@
 	</div>
 
 	<div>
-		<h1>JavaScript</h1>
+		<h1 id="JavaScript">JavaScript</h1>
 		<button id="b01" type="button" onclick="document.getElementById('try').innerHTML = Date()">Click to display</button>
 		<p id="try">This will change into the date.</p> 
 
@@ -277,12 +285,48 @@
 		<p id="try2">JavaScript can change the styles of an element.</p>
 		<script type="text/javascript" src="script2.js"></script>
 
-		<button id="b01" type="button">Click Me to Change Desks</button>
-		<img id="img1" src="desk.jpg" alt="Desk Flat Lay">
+		<button id="b01" type="button" onclick="desk(1)">Click Me to Change Desks</button>
+		<button id="b01" type="button" onclick="desk(0)">Click Me to Revert Back</button>
+		<br/>
+		<img id="img1" src="Images/desk.jpg" alt="Desk Flat Lay" style="width: 300px; height: 200px;">
 		<script type="text/javascript" src="script3.js"></script>
+
+		<p>The writing inside the no-script element will show below if your browser
+		does not support client-side scripts:</p>
+		<noscript>Sorry, your browser does not support JS!</noscript> <br/><br/>
 	</div>
 
+	<div>
+		<h1 id="Head">Head Element</h1>
+		<p>You are not able to see any head elements in the body, but they have been added to this document. The HTML base element is especially useful.</p>
+	</div>
 
+	<div>
+		<h1>Layout Elements</h1>
+		<table>
+			<tr>
+				
+			</tr>
+			<tr>
+				
+			</tr>
+			<tr>
+				
+			</tr>
+			<tr>
+				
+			</tr>
+			<tr>
+				
+			</tr>
+			<tr>
+				
+			</tr>
+			<tr>
+				
+			</tr>
+		</table>
+	</div>
 
 
 

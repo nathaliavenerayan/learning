@@ -2,7 +2,7 @@
 
 body {
 	font-family: "Raleway", sans-serif;
-	background-image: url('moroccoinjuly.jpg');
+	background-image: url('Images/moroccoinjuly.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;		/* Covers the element, image may be cut off */
@@ -18,7 +18,7 @@ div {
 
 div.class1 {
 	color: white;
-	background-image: url('space.jpg');
+	background-image: url('Images/space.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;  <!----- fit the entire image in the element ------>
@@ -28,7 +28,7 @@ div.class1 {
 	color: crimson;
 	text-shadow: 2px 0 0 #000000;
 	font-weight: bold;
-	background-image: urL('starvector.jpg');
+	background-image: urL('Images/starvector.jpg');
 	background-repeat: repeat;
 	background-size: 10%;
 }
@@ -154,6 +154,7 @@ ul#c1 li a:hover {
 	padding: 20px;
 	border: none;
 	border-radius: 8px;
+	margin-bottom: 5px;
 }
 
 button#b01:hover {
@@ -165,6 +166,11 @@ footer {
 	opacity: 0.9;
 	border-radius: 8px;
 	text-align: center;
+	width: 100%;
+}
+
+footer ul li {
+	width: 100%;
 }
 
 .icon {
