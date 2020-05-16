@@ -172,3 +172,10 @@ footer {
 	width: 50px;
 	margin: 5px;
 }
+
+iframe {
+	display: block;
+	min-height: 300px;
+	min-width: 500px;
+	border: none;
+}
