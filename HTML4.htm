@@ -15,35 +15,35 @@
 		<li><a href="#Tables">Jump to Table Element</a></li>
 		<li><a href="#Lists">Jump to List Element</a></li>
 		<li><a href="#Classes">Jump to Classes Element</a></li>
+		<li><a href="#Ids">Jump to Id Element</a>
 	</ul>
 
 	<div>
 		<h1>Test Styles</h1>
 		<div class="class2">
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		Hello everyone! 
+		Hello everyone! I am a div element with a class style. 
+		Hello everyone! I am a div element with a class style.
+		Hello everyone! I am a div element with a class style.
+		Hello everyone! I am a div element with a class style.
+		Hello everyone! I am a div element with a class style.
+		Hello everyone! I am a div element with a class style.
+		Hello everyone! I am a div element with a class style.
 		</div>
 
 		<p>
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+		Hello everyone! I am a default paragraph element. Hello everyone! I am a default paragraph element. 
+		Hello everyone! I am a default paragraph element. Hello everyone! I am a default paragraph element. 
+		Hello everyone! I am a default paragraph element. Hello everyone! I am a default paragraph element. 
+		Hello everyone! I am a default paragraph element. Hello everyone! I am a default paragraph element.  
 		</p>
 
 		<div class="class1">
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
-		</div>
-
-		<div class="class1">
-		Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! Hello everyone! 
+		Hello everyone! I am a div element with a class style. Hello everyone! I am a div element with a class style. 
+		Hello everyone! I am a div element with a class style. Hello everyone! I am a div element with a class style. 
+		Hello everyone! I am a div element with a class style. Hello everyone! I am a div element with a class style. 
+		Hello everyone! I am a div element with a class style. Hello everyone! I am a div element with a class style.  
+		Hello everyone! I am a div element with a class style. Hello everyone! I am a div element with a class style. 
+		Hello everyone! I am a div element with a class style. Hello everyone! I am a div element with a class style. 
 		</div>
 	</div>
 
@@ -104,7 +104,7 @@
 			<td>100.00</td>
 		</tr>
 	</tfoot>
-	</table>
+	</table> <br/>
 
 	<table id="t01">
 		<caption>Styled Table</caption>
@@ -125,9 +125,7 @@
 			<td>Smith</td>
 			<td>65</td>
 		</tr>
-	</table>
-
-	<br/>
+	</table> <br/>
 
 	<table id="t02">
 		<caption>Styled Table</caption>
@@ -230,10 +228,10 @@
 	<h1 id="Classes">Classes</h1>
 	<div>
 	<div class="test1 test2">
-		Hello World!
+		Hello World! I am a div element with two classes.
 	</div>
 
-		<p class="test1 test2">Hello Again</p>
+		<p class="test1 test2">Hello Again, I am a paragraph element with two classes.</p>
 
 		<!----------------- Use class attribute in JS ------------------->
 		<button id="b01" onclick="myFunction()">Kiss those elements goodbye</button>
@@ -247,6 +245,26 @@
 			}
 		</script>
 	</div>
+
+	<div>
+		<h2 id="Ids">Id</h2>
+		Here is an Id used in JS: <br/>
+		<button id="b01" onclick="displayResult()">Change the text</button>
+
+		<script type="text/javascript">
+			function displayResult() {
+				document.getElementById("Ids").innerHTML = "Hello World!";
+			}
+		</script>
+	</div>
+
+
+
+
+
+
+
+
 
 	<footer>
 		<h2>Contact</h2>
