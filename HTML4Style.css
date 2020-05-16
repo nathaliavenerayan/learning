@@ -143,3 +143,13 @@
 	#s01 {
 		color: red;
 	}
+
+	.test1 {
+		display: block;
+		text-align: center;
+	}
+
+	.test2 {
+		background-color: black;
+		color: white;
+	}
