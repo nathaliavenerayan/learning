@@ -176,6 +176,7 @@ footer {
 iframe {
 	display: block;
 	min-height: 300px;
-	min-width: 500px;
+	min-width: 100px;
+	width: 100%;
 	border: none;
 }

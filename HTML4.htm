@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Nathalia's Fourth</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="HTML4Style.css">
 </head>
 
@@ -16,6 +17,7 @@
 			<li><a href="#Lists">Jump to List Element</a></li>
 			<li><a href="#Classes">Jump to Classes Element</a></li>
 			<li><a href="#Ids">Jump to Id Element</a>
+			<li><a href="#Iframes">Jump to Iframe Element</a></li>
 		</ul>
 	</div>
 
@@ -253,21 +255,32 @@
 		Here is an Id used in JS: <br/>
 		<button id="b01" onclick="displayResult()">Change the text</button>
 
-		<script type="text/javascript">
-			function displayResult() {
-				document.getElementById("Ids").innerHTML = "Hello World!";
-			}
+		<script type="text/javascript" src="firstscript.js">
+			
 		</script>
 	</div>
 
 	<div>
-		<h1>HTML Iframes</h1>
+		<h1 id="Iframes">HTML Iframes</h1>
 		Load different pages into the iframe below: <br/>
 		<a href="https://www.w3schools.com/" target="a1">W3Schools</a>
 
 		<iframe src="https://nathaliavene.wordpress.com/" name="a1"></iframe>
 	</div>
 
+	<div>
+		<h1>JavaScript</h1>
+		<button id="b01" type="button" onclick="document.getElementById('try').innerHTML = Date()">Click to display</button>
+		<p id="try">This will change into the date.</p> 
+
+		<button id="b01" type="button" onclick="myFunction()">Click to Change</button>
+		<p id="try2">JavaScript can change the styles of an element.</p>
+		<script type="text/javascript" src="script2.js"></script>
+
+		<button id="b01" type="button">Click Me to Change Desks</button>
+		<img id="img1" src="desk.jpg" alt="Desk Flat Lay">
+		<script type="text/javascript" src="script3.js"></script>
+	</div>
 
 
 
