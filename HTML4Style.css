@@ -108,6 +108,10 @@ table#t02 th, table#t02 td {
 	padding-right: 75px;
 }
 
+table#t03 {
+	text-align: center;
+}
+
 /******* UL C1 *******/
 ul#c1 {
 	list-style-type: none;
