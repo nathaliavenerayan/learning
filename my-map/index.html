@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Google Map</title>
+    <style>
+        #map {
+            height: 100%;
+            border: none;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        
+        x = navigator.geolocation;
+        x.getCurrentPosition(initMap, failure);
+        
+
+
+        function initMap(position) {
+            // Get user location
+            var myLat = position.coords.latitude;
+            var myLng = position.coords.longitude;
+            var coord = new google.maps.LatLng(myLat, myLng);
+
+            var options = {
+                zoom: 15,
+                center: coords,
+                //mapTypeId: google.maps.MapTypeId.SATELLITE
+            }
+
+            // New map
+            var map = new google.maps.Map(document.getElementById('map'), options);
+
+            // Listen for click on map
+            google.maps.event.addListener(map, 'click', 
+            function(event) {
+                // Add marker
+                addMarker({coords:event.latLng});
+            });
+
+            // Custom marker image
+            var customIcon = {
+                url: 'homemarker.png',
+                scaledSize: new google.maps.Size(75,75),
+            };
+
+            // Array of markers
+            var markers = [
+                {
+                    coords:{lat:43.7735,lng:-79.5019},
+                    iconImage: customIcon,
+                    content: '<h1>York University</h1>'
+                },
+                {
+                coords:{lat:43.766851,lng:-79.505395},
+                content: '<h1>Fred Young Park</h1>'
+                },
+                {
+                    coords:{lat:43.765944,lng:-79.508367}
+                }
+            ];
+
+            // Loop through markers
+            for(var i = 0; i < markers.length; i++) {
+                addMarker(markers[i]);
+            }
+
+
+            // Add dynamic Marker Function
+            function addMarker(props) {
+                    var marker = new google.maps.Marker({
+                    position: props.coords,
+                    map: map,
+                    //icon: props.iconImage
+                });
+
+                // Check for custom icon
+                if(props.iconImage){
+                    marker.setIcon(props.iconImage);
+                }
+
+                // Check content 
+                if(props.content) {
+                    var infoWindow = new google.maps.InfoWindow({
+                    content: props.content
+                    });
+
+                    marker.addListener('click', function(){
+                    infoWindow.open(map, marker);
+                    });
+                }
+            }
+
+        }
+
+        function failure() {}  
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAigpSo1MQ-eeHeOPVJImgwi_Qhy9w8sIQ&callback=initMap&libraries=places"
+    async defer></script>
+</body>
+</html>
