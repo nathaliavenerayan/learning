@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+body {
+	background: black;
+	color: white;
+	text-align: center;
+  font-family: 'open sans', sans-serif;
+  font-size: 1.3vw;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	background-color: white;
+	color: black;
+	margin-left: 10px;
+	margin-right: 10px;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+h2 {
+  font-size: 2vw;
+}
+.left {
+	margin: 0 10px 15px 10px;
+	width: 20%;
+	padding: 15px;
+	float: left;
+	background-color: navy;
+}
+
+.left a {
+  background-color: white;
+  display: block;
+  padding: 5px;
+}
+
+.main {
+/*	background-color: lightblue;
+	opacity: 0.5;					will overlay the left navigation
+*/	margin: 10px;
+	padding: 20px;
+}
+
+.footer {
+	margin: 10px;
+	padding: 10px;
+	width: 100%;
+	background-color: lightgray;
+	opacity: 0.7;
+	float: left;
+
+}
+
+@media only screen and (max-width: 800px) {
+	/* for tablets */
+	.right {
+		width: 80%;
+		padding: 0;
+	}
+
+	.footer {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	/* for mobile */
+	.left, .right, .footer {
+		width: 100%;
+	}
+}
+
+div > a {
+	color: navy;
+	text-decoration: none;
+}
+
+
