@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+body {
+	text-align: center;
+	margin: 50px 15px 100px 15px;
+	background-color: midnightblue;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	background-color: gold;
+	color: navy;
+	border-radius: 25px;
+	margin-bottom: 2px;
+}
+
+h1 {
+	background-color: #FFFFFF;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+h2 {
+	background-color: lemonchiffon;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+h3 {
+	background-color: lightsalmon;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+button {
+	padding: 8px;
+	border-radius: 30px;
+	background-color: lightyellow;
+}
+
+button a {
+	display: block;
+}
+
+div {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+ul {
+	display: inline-block;
+	text-align: justify;
+	border-radius: 10px;
+}
+
+ul#ul1 {
+	list-style-type: none;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+ul#ul1 li {
+	float: left;
+}
+
+ul#ul1 li a {
+	display: block;
+	color: ivory;
+	text-align: center;
+	padding: 10px;
+	background-color: #7F7F7F;
+	text-decoration: none;
+
+}
+
+ul#ul1 li a:hover {
+	background-color: #BBBBBB;
+}
+
+ol {
+	text-align: justify;
+	display: inline-block;
+}
+
+.table1 {
+	border: 1px solid black;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table1 th, td {
+	border: 1px solid black;
+	padding: 5px;
+	background-color: #BBBBBB;
+}

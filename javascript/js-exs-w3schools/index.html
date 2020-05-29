@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <title>Nathalia's JavaScript Trials of W3Schools Examples</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+  	function firstFunction() {
+  		document.getElementById('p5').innerHTML = "Changes made!";
+  	}
+  </script>
+</head>
+<body>
+  <div>
+  	<ul id="ul1">
+  		<li><a href="#Intro">Jump to Intro</a></li>
+  		<li><a href="#WhereTo">Jump to Where To</a></li>
+      <li><a href="#Output">Jump to Output</a></li>
+      <li><a href="#Statements">Jump to Statements</a></li>
+      <li><a href="#Syntax">Jump to Syntax</a></li>
+      <li><a href="#Comments">Jump to Comments</a></li>
+      <li><a href="#Variables">Jump to Variables</a></li>
+      <li><a href="#Operators">Jump to Operators</a></li>
+      <li><a href="#Arithmetic">Jump to Arithmetic</a></li>
+      <li><a href="#AssignmentOp">Assignment Operators</a></li>
+      <li><a href="#DTypes">Data Types</a></li>
+      <li><a href="#Functions">Functions</a></li>
+      <li><a href="#Objects">Objects</a></li>
+      <li><a href="#Events">Events</a></li>
+      <li><a href="#Strings">Strings</a></li>
+  	</ul>
+  </div>
+
+  <div id="Intro">
+      <h1>JS Intro</h1>
+	  <h2>Change HTML content with JS</h2>
+	  <p id="chng">This content will be changed by the button below.</p>
+	  <button type="button" onclick='document.getElementById("chng").innerHTML = 2014 + 6 + " Hello World! I am JavaScript."'>Click here</button>
+	  <h2>Change HTML attribute values</h2>
+	  <p>JS changes the value of the src attribute of an img element.</p>
+	  <button onclick="document.getElementById('img1').src = 'Images/lighton.jpg'">Turn on the light!</button>
+	  <button onclick="document.getElementById('img1').src = 'Images/lightoff.jpg'">Turn off the light!</button><br/><br/>
+	  <img id="img1" src="Images/lightoff.jpg" style="width:250px;height:375px;"/>
+	  <h2>Change HTML styles (CSS)</h2>
+	  <p id="p1">This style will change.</p>
+	  <button onclick="document.getElementById('p1').style.fontSize = '25px'">Click here</button>
+	  <h2>Hide HTML elements</h2>
+	  <p id="p2">This text will be hidden.</p>
+	  <button onclick="document.getElementById('p2').style.display = 'none'">Click here</button>
+	  <h2>Display hidden HTML elements</h2>
+	  <p id="p3" style="display:none;">This will be shown once the button is clicked</p>
+	  <button onclick="document.getElementById('p3').style.display = 'block'">Click here</button>
+  </div>
+  
+  <div id="WhereTo">
+    <h1>JS Where To</h1>
+    <h2>The script tag</h2>
+    <p id="p4"></p>
+    <!-- Type attribute not required in HTML as it is the default script language -->
+    <script>document.getElementById("p4").innerHTML = "This was written using JS.";</script>
+    <h3>Tidbits</h3>
+    <ul>
+      <li>A function is a block of code that executes when called for.</li>
+      <li>A function can be called when an event occurs.</li>
+      <li>Scripts can be placed in the body or head section.</li>
+      <li>Best practice: scripts should be placed at the end of the body section.</li>
+    </ul>
+    <h2>Scripts in head element</h2>
+    <p id="p5">Function in the head element is invoked when button below is clicked.</p>
+    <button onclick="firstFunction()">Click here</button>
+    <p>Likewise, you can place the script in the body element.</p>
+    <h2>Scripts in body element</h2>
+    <p id="p6">Scripts should be placed at the bottom of the body element to improve display speed.</p>
+    <button onclick="secondFunction()">Click here</button>
+    <h2>External scripts</h2>
+    <p id="p7">External scripts can be used when the same code is used many times. Use the src attribute instead of directly placing code inside the script element.</p>
+    <button onclick="thirdFunction()">Click here</button>
+  </div>
+
+  <div id="Output">
+  	<h1>JS Output</h1>
+  	<p>You can use different ways to display data:</p>
+  	<ul>
+  		<li>Using innerHTML to access an element</li>
+  		<li>Using document.write() for testing</li>
+  		<li>Using window.alert()</li>
+  		<li>Using console.log()</li>
+  	</ul><br/>
+  	Open a webpage with an alert box by pressing the button below: <br/>
+    <button><a href="index2.html" target="_blank">Click here</a></button>
+    <h2>Using console . log() method</h2>
+    You can use console.log for debugging purposes. <br/>
+    Press <kbd>F12</kbd> to open the console and activate debugging.
+    You will see the output 10.
+    <h2>Print with JS window . print() method</h2>
+    You can call this method to print the current window content.<br/>
+    <button onclick="window.print()">Print page</button>
+  </div>
+
+  <div id="Statements">
+    <h1>JS Statements</h1>
+    <p>The program will show the result of these statements below:</p>
+    <pre>
+      <code>
+       var x, y, z;
+       x = 10;
+       y = 10;
+       z = x + y;
+      </code>
+    </pre>
+    <p id="p8"></p>
+    <button onclick="add()">Click here</button><br/><br/>
+    JS statements are composed of:<br/>
+    <ol>
+      <li>Values</li>
+      <li>Operators ( = + - * / )</li>
+      <li>Expressions</li>
+      <li>Keywords</li>
+      <li>Comments</li>
+    </ol>
+    <h2>JS Line length and line breaks</h2>
+    The best place to break a line is after an operator.
+  </div>
+
+  <div id="Syntax">
+    <h1>JS Syntax</h1>
+    <h2>JS Keywords</h2>
+    <p>JS keywords are used to identify actions to be performed.</p>
+    <h2>JS Identifiers</h2>
+    <p>Best practices for naming identifiers are:</p>
+    <ul>
+      <li>The first character must be a letter, _, or $.</li>
+      <li>Numbers are not allowed as the first character.</li>
+      <li>Identifiers are case sensitive.</li>
+      <li>Use lower camel case.</li>
+      <ul>
+        <li>ex: lowerCamelCase</li>
+      </ul>
+      <li>Hyphens are not allowed.</li>
+    </ul>
+    <h2>Character Set</h2>
+    JS uses the Unicode character set. <br/>
+    Refer to <a href="https://bit.ly/36mgw5m">W3Schools' Reference</a>.
+  </div>
+
+  <div id="Comments">
+    <h1>JS Comments</h1>
+    <p>Use <code>//</code> for single line comments or 
+      <code>/*  */</code> for multi-line comments.</p>
+  </div>
+
+  <div id="Variables">
+    <h1>JS Variables</h1>
+    Identifiers (names) must begin with: <br/>
+    <ul>
+      <li>A letter, A-Z or a-z</li>
+      <li>$ is used as an alias for the main function in a JS library.</li>
+      <ul>
+        <li><code>$</code> is the main function used to select HTML elements.</li>
+        <li><code>$("p");</code> means select all p elements.</li>
+        <li>JQuery is a JS library.</li>
+      </ul>
+      <li>Underscore, _</li>
+      <ul>
+        <li>_ is used as an alias for private (hidden) variables.</li>
+      </ul>
+    </ul><br/>
+    These are treated like letters.
+  </div>
+
+  <div id="Operators">
+    <h1>JS Operators</h1>
+    <ul>
+      <li><code>+</code> is the addition operator.</li>
+      <li><code>=</code> is the assignment operator.</li>
+      <ul>
+        <li><code>x = 5;</code> is read as <q>5 is assigned to x</q>, not <q>x equals to 5</q>.</li>
+      </ul>
+      <li><code>*</code> is the multiplication operator.</li>
+    </ul>
+    <h2>JS Arithmetic Operators</h2>
+      <table class="table1">
+        <tr><th>Operator</th><th>Description</th></tr>
+        <tr><td>+</td><td>Addition</td></tr>
+        <tr><td>-</td><td>Subtraction</td></tr>
+        <tr><td>*</td><td>Multiplication</td></tr>
+        <tr><td>**</td><td>Exponentiation <a href="https://www.w3schools.com/js/js_es6.asp">Reference</a></td></tr>
+        <tr><td>/</td><td>Division</td></tr>
+        <tr><td>%</td><td>Modulus (division remainder)</td></tr>
+        <tr><td>++</td><td>Increment</td></tr>
+        <tr><td>--</td><td>Decrement</td></tr>
+      </table>
+      <h2>JS Assignment Operators</h2>
+      <table class="table1">
+        <tr><th>Operator</th><th>Looks Like</th><th>Which Means</th><th>Type of Operator in English</th></tr>
+        <tr><td>=</td><td>x = y</td><td>x = y</td><td>Assignment</td></tr>
+        <tr><td>+=</td><td>x += y</td><td>x = x + y</td><td>Addition assignment</td></tr>
+        <tr><td>-=</td><td>x -= y</td><td>x = x - y</td><td>Subtraction assignment</td></tr>
+        <tr><td>*=</td><td>x *= y</td><td>x = x * y</td><td>Multiplication assignment</td></tr>
+        <tr><td>/=</td><td>x /= y</td><td>x = x / y</td><td>Division assignment</td></tr>
+        <tr><td>%=</td><td>x &= y</td><td>x = x % y</td><td>Modulus assignment</td></tr>
+        <tr><td>**=</td><td>x **= y</td><td>x = x ** y</td><td>Exponentiation assignment</td></tr>
+      </table>
+      <h2>String Operators</h2>
+      <p>The addition (+) operator can be used to add strings. This is called concatenation.
+        For example, </p>
+      <pre>
+        <code>
+          var firstName = "Jane";
+          var lastName = "Doe";
+          var name = firstName + " " + lastName;
+        </code>
+      </pre><br/>
+      will output <code>John Doe</code>.
+      <h3>Shortcut</h3>
+      <p>The addition assignment (+=) assignment operator can concatenate strings as well:</p>
+      <pre>
+        <code>
+          var firstHalf = "What a nice ";
+          firstHalf += "evening! I am a script.";
+        </code>
+      </pre>
+      <p>will output:</p>
+      <p id="p9"></p>
+      <p>a.k.a the concatenation operator.</p>
+      The output of <code>var x = "Hello" + 9;</code> will be a string.
+      <h2>Comparison Operators</h2>
+      <table class="table1">
+        <tr><th>Operator</th><th>Description</th></tr>
+        <tr><td>==</td><td>equal to</td></tr>
+        <tr><td>===</td><td>equal value and equal type</td></tr>
+        <tr><td>!=</td><td>not equal</td></tr>
+        <tr><td>!==</td><td>not equal value or not equal type</td></tr>
+        <tr><td>&gt;</td><td>greater than</td></tr>
+        <tr><td>&lt;</td><td>less than</td></tr>
+        <tr><td>&gt;=</td><td>greater than or equal to</td></tr>
+        <tr><td>&lt;=</td><td>less than or equal to</td></tr>
+        <tr><td>?</td><td><b>ternary operator*</b></td></tr>
+      </table>
+      <h2>Logical Operators</h2>
+      <table class="table1">
+        <tr><th>Operator</th><th>Description</th></tr>
+        <tr><td>&&</td><td>logical and</td></tr>
+        <tr><td>||</td><td>logical or</td></tr>
+        <tr><td>!</td><td>logical not</td></tr>
+      </table>
+      <h2>Type Operators</h2>
+      <table class="table1">
+        <tr><th>Operator</th><th>Description</th></tr>
+        <tr><td>typeof</td><td>Returns the type of a variable</td></tr>
+        <tr><td>instanceof</td><td>Returns true if an object is an instance of an object type</td></tr>
+      </table>
+      <h2>Bitwise Operators</h2>
+      I'll code this table later.*
+  </div>
+
+  <div id="Arithmetic">
+    <h1>JS Arithmetic</h1>
+    precedence. operators. operands. operators operate on number literals, variables, or expressions.
+    You can use parentheses to change the operator precedence. Computed from left to right.<br/>
+    <a href="https://www.w3schools.com/js/js_arithmetic.asp">Look at the precedence table.</a><br/>
+    I'll code the precedence table later.*
+  </div>
+
+  <div id="AssignmentOp">
+    <h1>Assignment Operators</h1>
+    Assign values to variables.
+  </div>
+
+  <div id="DTypes">
+    <h1>JS Data Types</h1>
+    There is a difference in output between <br/>
+    <code> var x = 2016 + 4 + "Year";</code> and <code>var x = "Year" + 2016 + 4</code>
+    <br/>
+    Hint: Expressions like this are evaluated from left to right. <br/>
+    <h2>JS Data Types are Dynamic</h2>
+    Dynamic types, so the same variable can hold different data types.
+    <h2>JS Strings</h2>
+    <p id="p10"></p>
+    <h2>Numbers</h2>
+    <ul>
+      <li>Numbers with or without decimals are fine.</li>
+      <li>Numbers can be written with scienfitic notation:</li>
+      <ul>
+        <li><code>12e3 = 12000</code></li>
+        <li><code>12e-3 = 0.012</code></li>
+      </ul>
+    </ul>
+    <h2>Booleans</h2>
+    <ul>
+      <li>Booleans can hold a value of T or F.</li>
+      <li>Booleans are used in conditional testing.</li>
+    </ul>
+    <h2>Arrays</h2>
+    <ul>
+      <li>Arrays contain multiple items.</li>
+      <li>Array indexes are zero-based.</li>
+      <li>Arrays are written with square brackets.</li>
+      <li>ex: <code>var celestials = ["sun", "moon", "comet"]</code></li>
+    </ul>
+    <h2>Objects</h2>
+    <ul>
+      <li>Objects are written with curly brackets <code>{ }</code>.</li>
+      <li>Its properties are written as name:value pairs.</li>
+      <li>ex: <code>var x = {first:"Jane", age:25, hairColour:"hazel"};</code></li>
+      <li>Object x has 3 properties: first, age, and hairColour.</li>
+    </ul>
+    <h2>Typeof Operator</h2>
+    This operator returns the type of a variable or expression.
+    <h2>Undefined</h2>
+    A variable initializes with the default value undefined, whose type is also of type undefined.
+    <br/> You can empty a variable's value with undefined.
+    <h2>Empty Values</h2>
+    An empty string's value is "" with type String.
+    <h2>Null</h2>
+    Null's data type is Object.
+    You can empty an object by setting its value to null. It's type is still an object.
+    Null and Undefined have equal value but have different types.<br/>
+    <pre>
+      <code>
+        null == undefined // true
+        null === undefined // false
+      </code>
+    </pre>
+    <h2>Primitive Data</h2>
+    <ul><li>String</li><li>Number</li><li>Boolean</li><li>Undefined</li></ul>
+    <br/><code>typeof x</code> is undefined.
+    <h2>Complex Data</h2>
+    <ul><li>Function</li><li>Object (objects, arrays, null)</li></ul>
+    <li>In JS Arrays are objects</li>
+  </div>
+
+  <div id="Functions">
+    <h1>Functions</h1>
+    <p id="p11"></p>
+    <p>Above is a script with a source linking to a function where you pass arguments into it.</p>
+    <h2>Function Syntax</h2>
+    <p><code>function name(parameter, parameter) { }</code></p>
+    <h2>Function Invocation</h2>
+    <p>A function is called a.k.a. invoked when:</p>
+    <ul>
+      <li>An event occurs.</li>
+      <li>It is invoked from JS code.</li>
+      <li>It is self invoked.</li>
+    </ul>
+    <h2>Function Return</h2>
+    <p>The function will stop executing when it reaches a return statement.
+      Functions compute a return value which is returned back to the caller.
+    </p>
+    <h2>() Operator</h2>
+    <p>Accessing object methods without the parentheses operator will return the function object definition instead of the result.</p>
+    <p id="p12"></p>
+    <h2>Functions used as variable values</h2>
+    <p id="p13"></p>
+    <h2>Local variables</h2>
+    Variables declared within a function can only be accessed from within the function.
+    <p id="p14"></p>
+    Trying to access the variable from outside the functions results in: <br/>
+    <p id="p15"></p>
+  </div>
+
+  <div id="Objects">
+    <h1>Objects</h1>
+    <h2>Object Variables</h2>
+    Assign a value to a variable and use that instead of hard coding: <br/>
+    <p id="p16"></p>
+    Objects are variables too, and can contain many values written as name:value pairs:
+    <p id="p17"></p>
+    <h2>Accessing object properties</h2>
+    There's two ways to acces an object property: <br/>
+    <ol>
+      <li><code>objectName.propertyName</code></li>
+      <li><code>objectName["propertyName"]</code></li>
+    </ol>
+    <h2>Object methods</h2>
+    Objects can have methods inside their properties. An object method is a function stored as a property value inside an object.
+    <p id="p18"></p>
+    <h2>this Keyword</h2>
+    In a function definition, <code>this</code> refers to the object that owns the function property.
+    <h2>Accessing object methods</h2>
+    <code>objectName.methodName();</code>
+    <h2>Do not declare Strings, Numbers, and Booleans as Objects!</h2>
+    When a JS variable is declared with "new", it's created as an object:<br/>
+    <code>var z = new String(); // Declares x as a String object</code>
+  </div>
+
+  <div id="Events" onmouseover="this.style.backgroundColor='white'">
+    <h1>Events</h1>
+    Events are things that happen to HTML elements, and JS reacts on these detected events.
+    You would add event handler attributes to HTML elements: <br/>
+    <code> < element event='JS code' > </code>
+    <p id="p19">This will change the paragraph element.</p>
+    <button onclick="randomNum()">Click here to change the p element</button>
+    <br/>To change the element's content of itself, use <code>this</code> <br/>
+    <button onclick="this.innerHTML=Date()">Click here to change button element</button><br/>
+    <p>You'll see event attributes like onclick call functions.</p>
+    <button id="b01" onclick="changeButton()">Click here to change the button element again</button>
+    <h2>Common HTML Events</h2>
+    <table class="table1">
+      <tr>
+        <th>Event</th><th>Description</th>
+      </tr>
+      <tr>
+        <td>onchange</td><td>HTML element has been changed</td>
+      </tr>
+      <tr>
+        <td>onclick</td><td>user clicks HTML element</td>
+      </tr>
+      <tr><td>onmouseover</td><td>Self explanatory</td></tr>
+      <tr><td>onmouseout</td><td>user moves mouse away from an HTML element</td></tr>
+      <tr><td>onkeydown</td><td>User pushes a keyboard key</td></tr>
+      <tr><td>onload</td><td>Browser finishes loading the page</td></tr>
+      <tr><td colspan="2"><a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Reference of more HTML DOM Events</a></td></tr>
+    </table>
+  </div>
+
+  <div id="Strings">
+    <h1>JS Strings</h1>
+    <p>To find the length of a string, use the built-in length property</p>
+    <p id="p20"></p>
+    <h2>Escape Character</h2>
+    <p>The <code>\</code> character turns special characters into string characters:</p>
+    <table class="table1">
+      <tr><th>Code</th><th>Result</th><th>Description</th></tr>
+      <tr><td>\'</td><td>'</td><td>Single quote</td></tr>
+      <tr><td>\"</td><td>"</td><td>Double quote</td></tr>
+      <tr><td>\\</td><td>\</td><td>Backslash</td></tr>
+    </table>
+    <p>Example:</p>
+    <p id="p21">Example:</p>
+    <p>JS objects cannot be compared.</p>
+  </div>
+
+  <div id="StringMethods">
+    <h1>String Methods</h1>
+    <h2>String Length Property</h2>
+    <p>The length property returns the length of a string:</p>
+    <p id="p22"></p>
+    <h2>Finding a String in a String Method</h2>
+    <p><code>indexOf()</code> returns the position of the first time a specified string occurs in a String.</p>
+    <p id="p23"></p>
+    <p><code>lstIndexOf()</code> method returns the index of the last occurerence in a String:</p>
+    <p id="p24"></p>
+    <p>Both methods return -1 if the text is not found.
+      <br/>Both methods accept a second parameter, starting position.
+    </p>
+    <p id="p25"></p>
+    The lastIndexOf() method searches backwards.
+    <p>search() method can take regex expressions as values.</p>
+    <h2>Extracting Strings Parts</h2>
+    <p>There are 3 methods for extracting part of a string:</p>
+    <ul>
+      <li>slice(start, end)</li><li>substring(start, end)</li><li>substr(start, length)</li>
+    </ul>
+    <h3>slice() Method</h3>
+    <p>
+      Returns the extracted part in a new string. <br/>
+      2 parameters: start position, end position (end not included)
+    </p>
+    <p id="p26"></p>
+    <p id="p27"></p>
+    <p id="p28"></p>
+    <p id="p29"></p>
+    <h3>substring() Method</h3>
+    Substring cannot accept negative indexes. If you omit the second parameter, the method will 
+    slice out the rest of the string like slice().
+    <p id="p30"></p>
+    <p id="p31"></p>
+    <h3>substr() Method</h3>
+    <p>The second parameter specifies the length of the extracted part.</p>
+    <p id="p32"></p>
+    Omitting the second parameter slices out the rest of the string.
+    <p id="p33"></p>
+    <p id="p34"></p>
+    <h2>Replacing String Content</h2>
+    Returns a new string with replaced substring.
+    <p id="p35">We are in Spring!</p>
+    <button onclick="myReplace()">Click here to update season</button><br/>
+    <ul><li>Case-sensitive</li><li>Only first match</li></ul><br/>
+    Replace case insensitive by using regular expression <code>/i</code> flag
+    <p id="p36">We are in Spring!</p>
+    <button onclick="myReplace2()">Click here to replace word</button>
+    Replace all matches with a /g flag
+    <p id="p37">We are in Spring!</p>
+    <button onclick="myRep()">Click here to replace all i's</button>
+    <h2>Converting to Upper and Lower Case</h2>
+    <h2>concat() Method</h2>
+    <h2>String.trim()</h2>
+    <h2>Extracting String Characters</h2>
+    <h2>charAt() Method</h2>
+    <h2>charCodeAt() Method</h2>
+    <h2>Property Access</h2>
+    <h2>Converting a String to an Array</h2>
+    <h3>Complete String Reference</h3>
+  </div>
+
+
+
+
+
+
+  <footer>
+  	<div>
+  		<h2>Contact</h2>
+  	</div>
+  	<ul id="ul1">
+  	  <li><a href="#">Jump to top</a></li>
+    </ul>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+  	function secondFunction() {
+  		document.getElementById("p6").innerHTML = "Changes made!";
+  	}
+  </script>
+  <script src="JS/script.js"></script>
+  <script>console.log(5 + 5);</script>
+  <script src="JS/script3.js"></script>
+  <script>
+    var firstHalf = "What a nice ";
+    firstHalf += "evening! I am a script.";
+    document.getElementById('p9').innerHTML = firstHalf;
+  </script>
+  <script src="JS/script4.js"></script>
+  <script src="JS/script5.js"></script>
+  <script src="JS/script6.js"></script>
+</body>
+</html>
